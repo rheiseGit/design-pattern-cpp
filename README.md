@@ -1,2 +1,3 @@
 # design-pattern-cpp
-material design pattern
+
+Exercise and corresponding solutions.
