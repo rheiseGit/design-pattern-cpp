@@ -1,7 +1,8 @@
 # my ignores
-a # complied files without suffix
-export_path
+a
+export_path	
 .hypothesis
+slides
 
 
 ## c++
