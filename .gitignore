@@ -1,5 +1,6 @@
 # my ignores
-a
+a # complied files without suffix
+export_path
 
 # Prerequisites
 *.d
