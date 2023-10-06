@@ -135,18 +135,21 @@ class SUVBuilder : public Builder
 	
         Wheel* buildWheel()
         {
+            // 22" wheels
             wheel = new Wheel(22);
             return wheel;
         }
 
         Engine* buildEngine()
         {
+            // horsepower 400
             engine = new Engine(400);
             return engine;
         }
 
         Body* buildBody()
-        {
+        {  
+            // Body SUV
             body = new Body("SUV");
 			return body;
         }
