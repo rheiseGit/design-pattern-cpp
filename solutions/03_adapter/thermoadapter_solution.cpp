@@ -28,7 +28,6 @@ class FahrenheitThermo
             std::cout << "FahrenheitThermo called." << "\n";
             return -4; // -4 °F should be -20° C
         }
-    
 };
 
 class ThermoAdapter : public ThermoInterface {

@@ -5,6 +5,7 @@ class ThermoInterface
 {
     public:
         virtual double getTempC() = 0;
+        virtual ~ThermoInterface() {}; // important to avoid memory leak by ThermoAdapter
 };
 
 
@@ -24,6 +25,7 @@ class FahrenheitThermo
     public:
         double getFahrenheitTemperature() 
         {
+            std::cout << "FahrenheitThermo called." << "\n";
             return -4; // -4 °F should be -20° C
         }
 };
@@ -36,5 +38,8 @@ int main()
     std::cout << ti->getTempC() << std::endl;
 
     if(ti != nullptr)
-       delete ti;
+    {
+        delete ti;
+        ti = nullptr;
+    }
 }
