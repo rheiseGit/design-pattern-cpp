@@ -19,6 +19,8 @@ int main()
 	// TODO: Instantiate the policy and the context.
 	
 
+
+
 	std::vector<int> array = createIntegerArray();
 
 	for (int i = 0; i < 10; i++)

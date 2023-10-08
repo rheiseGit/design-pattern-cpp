@@ -8,7 +8,7 @@
 class QuickSort : public SortStrategy
 {
 	public:
-	// TODO 2: Implement the missing interface
+	// TODO: Implement the missing interface
 	// You need to use the implemented method quicksort().
 
 	private:

@@ -7,7 +7,7 @@
 class MergeSort : public SortStrategy
 {
 	public:	
-		// TODO 2: Implement the missing interface
+		// TODO: Implement the missing interface
 		// You need to use to implemeted method sort()
 		
 		/***********************************************************************

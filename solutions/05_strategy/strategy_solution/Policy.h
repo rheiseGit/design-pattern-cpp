@@ -8,17 +8,17 @@
 class Policy
 {
 	private:
-	    // TODO 4: Declare the missing attribute (hint: check the constructor).
-		Context* context;	
+	    // TODO: Declare the missing attribute (hint: check the constructor).
+		Context* context;	// part of solution
 
 	public:
-		// TODO 5: Instantiate the missing attribute.
-		Policy(Context* context) : context(context) {}
+		// TODO: Instantiate the missing attribute.
+		Policy(Context* context) : context(context) {} // part of solution
 
 		virtual void configure(bool timeIsImportant, bool spaceIsImportant)
 		{
-		// TODO 6: Add implementation for choosing the appropriate sorting algorithm.
-			if (timeIsImportant && !spaceIsImportant)
+		// TODO: Add implementation for choosing the appropriate sorting algorithm.
+			if (timeIsImportant && !spaceIsImportant) // part of solution
 				context->setSortAlgorithm(new MergeSort);
 			else if (timeIsImportant && spaceIsImportant)
 				context->setSortAlgorithm(new QuickSort);

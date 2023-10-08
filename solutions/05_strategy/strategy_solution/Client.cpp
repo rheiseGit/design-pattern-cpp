@@ -16,10 +16,10 @@ void simulateRuntimeConfigurationChange(Policy*);
 
 int main()
 {
-	// TODO 7: Instantiate the policy and the context.
+	// TODO: Instantiate the policy and the context.
 	
-	Context* sortingContext = new Context();
-	Policy* policy = new Policy(sortingContext);
+	Context* sortingContext = new Context();     // part of solution
+	Policy* policy = new Policy(sortingContext); // part of solution
 
 	std::vector<int> array = createIntegerArray();
 
