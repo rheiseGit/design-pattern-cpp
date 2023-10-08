@@ -58,6 +58,7 @@ class Inactive(State):
             case _:
                 pass
 
+# TODO: Implement classes for all missing states by inheritance from class State
 
 class On(State):
     """Concrete state class for the 'on' state."""

@@ -58,6 +58,7 @@ class Inactive(State):
             case _:
                 pass
 
+# TODO: Implement classes for all missing states by inheritance from class State
 
 class Context(ABC):
     """Abstract base class for the Context class of the State pattern."""
