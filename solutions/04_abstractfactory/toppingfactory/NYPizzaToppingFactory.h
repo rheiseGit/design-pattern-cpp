@@ -16,7 +16,9 @@
 #include "../toppings/clams/FreshClams.h"
 #include "../toppings/dough/Dough.h"
 #include "../toppings/dough/ThinCrustDough.h"
-#include "../toppings/meat/Weisswurst.h"
+// TODO: include necessary meat headers
+#include "../toppings/meat/meat.h"	// part of solution
+#include "../toppings/meat/Ham.h"	// part of solution
 #include "PizzaToppingFactory.h"
 #include <vector>
 
@@ -38,8 +40,8 @@ namespace abstractfactorytoppingfactory
 	using FreshClams = abstractfactorytoppings::clams::FreshClams;
 	using Dough = abstractfactorytoppings::dough::Dough;
 	using ThinCrustDough = abstractfactorytoppings::dough::ThinCrustDough;
-	using Weisswurst = abstractfactorytoppings::meat::Weisswurst;
-
+	// TODO: include necessary Meat
+	using Ham = abstractfactorytoppings::meat::Ham; // part of solution
 	class NYPizzaToppingFactory : public PizzaToppingFactory
 	{
 
@@ -81,9 +83,10 @@ namespace abstractfactorytoppingfactory
 			return new FreshClams();
 		}
 
-		Meat* createMeat() override
+		//TODO: create method createMeat
+		Meat* createMeat() override	// part of solution
 		{
-			return new Weisswurst();
+			return new Ham();
 		}
 
 	};

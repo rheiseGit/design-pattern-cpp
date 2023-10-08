@@ -51,15 +51,20 @@ int main()
 	pizza = nyStore->orderPizza("meat");
 	if(pizza != nullptr)
 		std::cout << "Ethan ordered a " << pizza->getName() << std::endl;
+	else
+		std::cout << "Meatpizza not available!" << std::endl;
 
 	pizza = chicagoStore->orderPizza("meat");
 	if(pizza != nullptr)
 		std::cout << "Joel ordered a " << pizza->getName() << std::endl;
+	else
+		std::cout << "Meatpizza not available!" << std::endl;
 
 	if(chicagoStore != nullptr)
 		delete chicagoStore;
 
 	if(nyStore != nullptr)
 		delete nyStore;
+
 
 }

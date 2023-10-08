@@ -7,7 +7,8 @@
 #include "../toppings/cheese/Cheese.h"
 #include "../toppings/clams/Clams.h"
 #include "../toppings/dough/Dough.h"
-#include "../toppings/meat/Meat.h"
+// TODO: include Meat.h
+#include "../toppings/meat/Meat.h" // part of solution
 #include <string>
 #include <vector>
 #include <iostream>
@@ -22,10 +23,10 @@ namespace abstractfactorypizza
 	using Cheese = abstractfactorytoppings::cheese::Cheese;
 	using Clams = abstractfactorytoppings::clams::Clams;
 	using Dough = abstractfactorytoppings::dough::Dough;
-	using Meat = abstractfactorytoppings::meat::Meat;
+	//TODO: include Meat
+	using Meat = abstractfactorytoppings::meat::Meat; // part of the solution
 
-	//TODO: Extend class Pizza with Meat Pizza
-	//TODO: Add the required attribute to a class
+	//TODO: Extend class Pizza with Meat Pizza. Don't forget the destructor
 	//TODO: Extend the toString() method to deal with meat toppings
 
 	class Pizza
@@ -39,7 +40,7 @@ namespace abstractfactorypizza
 		Cheese* cheese;
 		Pepperoni* pepperoni;
 		Clams* clam;
-		Meat* meat;
+		Meat* meat; // part of solution
 
 		virtual void prepare() = 0;
 
@@ -50,7 +51,7 @@ namespace abstractfactorypizza
 			delete cheese;
 			delete pepperoni;
 			delete clam;
-			delete meat;
+			delete meat; // part of solution
 		}
 
 		virtual void bake()
@@ -119,7 +120,7 @@ namespace abstractfactorypizza
 				result->append(pepperoni);
 				result->append("\n");
 			}
-			if(meat != nullptr)
+			if(meat != nullptr) // part of solution
 			{
 				result->append(meat);
 				result->append("\n");

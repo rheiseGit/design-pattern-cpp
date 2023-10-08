@@ -6,7 +6,8 @@
 #include "../pizza/PepperoniPizza.h"
 #include "../pizza/Pizza.h"
 #include "../pizza/VeggiePizza.h"
-#include "../pizza/MeatPizza.h"
+//TODO include head for MeatPizza
+#include "../pizza/MeatPizza.h" // part of solution
 #include "../toppingfactory/NYPizzaToppingFactory.h"
 #include "../toppingfactory/PizzaToppingFactory.h"
 #include "PizzaStore.h"
@@ -20,12 +21,13 @@ namespace abstractfactorypizzastore
 	using PepperoniPizza = abstractfactorypizza::PepperoniPizza;
 	using Pizza = abstractfactorypizza::Pizza;
 	using VeggiePizza = abstractfactorypizza::VeggiePizza;
-	using MeatPizza = abstractfactorypizza::MeatPizza;
+	//TODO: include MeatPizza
+	using MeatPizza = abstractfactorypizza::MeatPizza; // part of solution
 	using NYPizzaToppingFactory = abstractfactorytoppingfactory::NYPizzaToppingFactory;
 	using PizzaToppingFactory = abstractfactorytoppingfactory::PizzaToppingFactory;
 	
-
-	//TODO: Create meat pizza and name it using name of the Store
+	//TODO: Include a pizza with the name "New York Style Meat Pizza" to the method createPizza
+	// 		The corresponding item should be "meat".
 	class NYPizzaStore : public PizzaStore
 	{
 	private:
@@ -81,7 +83,7 @@ namespace abstractfactorypizzastore
 				pizza->setName("New York Style Pepperoni Pizza");
 
 			}
-			else if (item == "meat")
+			else if (item == "meat") // part of solution
 			{
 				pizza = new MeatPizza(ingredientFactory);
 				pizza->setName("New York Style Meat Pizza");

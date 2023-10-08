@@ -7,7 +7,7 @@
 #include "../toppings/cheese/Cheese.h"
 #include "../toppings/clams/Clams.h"
 #include "../toppings/dough/Dough.h"
-#include "../toppings/meat/Meat.h"
+#include "../toppings/meat/Meat.h" // part of solution
 #include <vector>
 
 namespace abstractfactorytoppingfactory
@@ -19,9 +19,10 @@ namespace abstractfactorytoppingfactory
 	using Cheese = abstractfactorytoppings::cheese::Cheese;
 	using Clams = abstractfactorytoppings::clams::Clams;
 	using Dough = abstractfactorytoppings::dough::Dough;
-	using Meat = abstractfactorytoppings::meat::Meat;
+	using Meat = abstractfactorytoppings::meat::Meat; // part of solution
 
-	//TODO: Add the required method to the following interface
+	//TODO: Add the required method to the following interface.
+	//      Don't forget to include the necessary header file.
 	class PizzaToppingFactory
 	{
 
@@ -32,7 +33,7 @@ namespace abstractfactorytoppingfactory
 		virtual std::vector<Veggies*> createVeggies() = 0;
 		virtual Pepperoni* createPepperoni() = 0;
 		virtual Clams* createClam() = 0;
-		virtual Meat* createMeat() = 0;
+		virtual Meat* createMeat() = 0; // part of solution
 	};
 
 }
