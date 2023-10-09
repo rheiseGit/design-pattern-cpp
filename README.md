@@ -1,5 +1,11 @@
 # design-pattern-cpp
 
-Exercise and corresponding solutions.
+Exercise and corresponding solutions for workshop Design Pattern.
 
-Exercises for state pattern and observer pattern use `python 3.11`! (also see requirements.txt)
+Requirements:
+
+- compiler for C++ 
+
+- Exercises for state pattern and observer pattern use `python 3.11` or higher! (also see requirements.txt)
+
+	- `pip3 install -r requirements.txt`.
