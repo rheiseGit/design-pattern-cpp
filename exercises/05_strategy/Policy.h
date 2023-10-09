@@ -18,6 +18,7 @@ class Policy
 		virtual void configure(bool timeIsImportant, bool spaceIsImportant)
 		{
 		// TODO: Add implementation for choosing the appropriate sorting algorithm.
+		// If time is important and space is not, use MergeSort else Quicksort
 		}
 };
 
