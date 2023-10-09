@@ -74,7 +74,7 @@ class Car
 		void display()
         {
             std::cout << " Body:" << body->getShape() << std::endl;
-            std::cout << " Engine (PS):" << engine->getPs() << std::endl;
+            std::cout << " Engine (HP):" << engine->getPs() << std::endl;
             std::cout << " Tire size:" << wheels[0]->getSize() << "'" << std::endl;
         }
 };
@@ -142,7 +142,7 @@ class SUVBuilder : public Builder
 
         Engine* buildEngine()
         {
-            // horsepower 400
+            // HP 400
             engine = new Engine(400);
             return engine;
         }
