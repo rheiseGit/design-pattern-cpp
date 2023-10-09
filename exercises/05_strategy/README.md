@@ -5,4 +5,4 @@ Complete the code implementing the strategy pattern.
 - see also illustration below
 - The method `getSortAlgorithm` is not implemented.
 
-![strategy.png](diagramm)
+![strategy.png](strategy.png)
