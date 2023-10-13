@@ -1,3 +1,7 @@
+"""
+State observer example: Webstore
+Exerise
+"""
 from observer_base import *
 
 

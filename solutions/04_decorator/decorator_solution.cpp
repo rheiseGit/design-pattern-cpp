@@ -30,6 +30,8 @@ class WindowDecorator : public Window
         Window* m_decoratedWindow; 
     
     public:
+    // TODO: create constructor to set m_decoratedWindow
+	// TODO: do not forget about a destructor
         WindowDecorator(Window* decoratedWindow)
 			: m_decoratedWindow(decoratedWindow) 
         {

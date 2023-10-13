@@ -1,3 +1,8 @@
+"""
+State observer example: Webstore
+Solution
+"""
+
 from observer_base import *
 
 

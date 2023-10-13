@@ -1,6 +1,6 @@
 """
 State pattern example: Music player and remote control.
-Solution
+Exercise
 """
 from abc import ABC, abstractmethod
 import enum
@@ -58,7 +58,9 @@ class Inactive(State):
             case _:
                 pass
 
+
 # TODO: Implement classes for all missing states by inheritance from class State
+
 
 class Context(ABC):
     """Abstract base class for the Context class of the State pattern."""
